@@ -1,0 +1,1586 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./support.js"></script>
+  </head>
+  <body>
+    <x-dc>
+      <helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          html,
+          body {
+            margin: 0;
+            padding: 0;
+            background: #0b131b;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          a {
+            text-decoration: none;
+          }
+        </style>
+      </helmet>
+
+      <div
+        data-screen-label="LMS — Weekly Module (Week 6)"
+        style="
+          font-family: &quot;Archivo&quot;, sans-serif;
+          background: #0b131b;
+          min-height: 100vh;
+          display: grid;
+          grid-template-columns: 240px 1fr;
+        "
+      >
+        <!-- Sidebar -->
+        <div
+          style="
+            background: #080f15;
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-direction: column;
+            padding: 24px 16px;
+            gap: 3px;
+          "
+        >
+          <div
+            style="
+              padding: 4px 12px 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 3px;
+            "
+          >
+            <div
+              style="
+                font-weight: 900;
+                font-size: 17px;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+              "
+            >
+              AZMSI
+            </div>
+            <div
+              style="
+                font-size: 8px;
+                letter-spacing: 0.3em;
+                color: #c9a13b;
+                font-weight: 700;
+              "
+            >
+              STUDENT PORTAL · LMS
+            </div>
+          </div>
+          <a
+            href="AZMSI LMS Dashboard.dc.html"
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+              display: block;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+            >Dashboard</a
+          >
+          <div
+            style="
+              background: rgba(201, 161, 59, 0.14);
+              color: #e5c25e;
+              font-size: 13px;
+              font-weight: 700;
+              padding: 10px 12px;
+              border-left: 3px solid #c9a13b;
+            "
+          >
+            My Courses
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 1px;
+              padding: 2px 0 6px 14px;
+            "
+          >
+            <a
+              href="AZMSI LMS Course.dc.html"
+              style="
+                color: #ffffff;
+                font-size: 11.5px;
+                font-weight: 700;
+                padding: 6px 12px;
+                border-left: 2px solid #c9a13b;
+                background: rgba(255, 255, 255, 0.05);
+                display: block;
+              "
+              >▸ EMD-101 Terminology</a
+            >
+            <div
+              style="
+                color: #66747f;
+                font-size: 11.5px;
+                padding: 6px 12px;
+                border-left: 2px solid rgba(255, 255, 255, 0.08);
+              "
+              style-hover="color: #FFFFFF;"
+            >
+              ▸ EMD-102 Anatomy I
+            </div>
+            <div
+              style="
+                color: #66747f;
+                font-size: 11.5px;
+                padding: 6px 12px;
+                border-left: 2px solid rgba(255, 255, 255, 0.08);
+              "
+              style-hover="color: #FFFFFF;"
+            >
+              ▸ EMD-103 Cell Bio &amp; Genetics
+            </div>
+            <div
+              style="
+                color: #66747f;
+                font-size: 11.5px;
+                padding: 6px 12px;
+                border-left: 2px solid rgba(255, 255, 255, 0.08);
+              "
+              style-hover="color: #FFFFFF;"
+            >
+              ▸ EMD-104 Healthcare Systems
+            </div>
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Calendar
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Grades
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Research Tracker
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Library
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Forums
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Live Classes
+          </div>
+          <div style="flex: 1"></div>
+          <div
+            style="
+              border-top: 1px solid rgba(255, 255, 255, 0.08);
+              padding-top: 14px;
+            "
+          >
+            <a
+              href="AZMSI Website.dc.html"
+              style="
+                color: #66747f;
+                font-size: 12px;
+                padding: 8px 12px;
+                display: block;
+              "
+              style-hover="color: #E5C25E;"
+              >← azmsi.com</a
+            >
+          </div>
+        </div>
+
+        <!-- Main -->
+        <div style="display: flex; flex-direction: column; min-height: 100vh">
+          <!-- Top bar -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 16px 40px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+              gap: 24px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 12px;
+                color: #66747f;
+              "
+            >
+              <a
+                href="AZMSI LMS Dashboard.dc.html"
+                style="color: #66747f"
+                style-hover="color: #FFFFFF;"
+                >Dashboard</a
+              >
+              <span>/</span>
+              <a
+                href="AZMSI LMS Course.dc.html"
+                style="color: #66747f"
+                style-hover="color: #FFFFFF;"
+                >EMD-101</a
+              >
+              <span>/</span>
+              <span style="color: #e5c25e; font-weight: 700">Week 6</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <div
+                style="
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  background: #1f7a6f;
+                  color: #ffffff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 12.5px;
+                  font-weight: 800;
+                "
+              >
+                DR
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <div
+                  style="font-size: 12.5px; font-weight: 700; color: #ffffff"
+                >
+                  Daniel Reyes
+                </div>
+                <div style="font-size: 10.5px; color: #66747f">
+                  eMD Candidate · Cohort 1
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Week header -->
+          <div
+            style="
+              padding: 36px 40px 28px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+              background: linear-gradient(
+                180deg,
+                rgba(31, 122, 111, 0.1),
+                transparent 75%
+              );
+              display: flex;
+              flex-direction: column;
+              gap: 18px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 32px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  max-width: 680px;
+                "
+              >
+                <div
+                  style="
+                    font-size: 11px;
+                    font-weight: 900;
+                    color: #e5c25e;
+                    letter-spacing: 0.16em;
+                  "
+                >
+                  EMD-101 · WEEK 6 OF 10 · JUN 9–15
+                </div>
+                <h1
+                  style="
+                    font-weight: 900;
+                    font-size: 32px;
+                    color: #ffffff;
+                    margin: 0;
+                    line-height: 1.08;
+                    letter-spacing: -0.01em;
+                  "
+                >
+                  Diagnostic &amp; Imaging Terminology
+                </h1>
+                <div
+                  style="
+                    font-family: &quot;Source Serif 4&quot;, serif;
+                    font-style: italic;
+                    font-size: 14.5px;
+                    color: #8e9aa6;
+                    line-height: 1.6;
+                  "
+                >
+                  This week you will: interpret radiology and imaging language,
+                  decode diagnostic report structure, connect imaging terms to
+                  anatomy, and apply diagnostic vocabulary to executive case
+                  review.
+                </div>
+              </div>
+              <div style="display: flex; gap: 8px; flex-shrink: 0">
+                <div
+                  style="
+                    border: 1px solid rgba(255, 255, 255, 0.25);
+                    color: #8e9aa6;
+                    font-size: 11px;
+                    font-weight: 800;
+                    padding: 9px 16px;
+                    border-radius: 999px;
+                  "
+                >
+                  ← WEEK 5
+                </div>
+                <div
+                  style="
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    color: #4a5662;
+                    font-size: 11px;
+                    font-weight: 800;
+                    padding: 9px 16px;
+                    border-radius: 999px;
+                  "
+                >
+                  WEEK 7 →
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 16px">
+              <div
+                style="
+                  flex: 1;
+                  height: 5px;
+                  background: rgba(255, 255, 255, 0.08);
+                "
+              >
+                <div style="height: 5px; width: 40%; background: #c9a13b"></div>
+              </div>
+              <div
+                style="
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  color: #e5c25e;
+                  letter-spacing: 0.1em;
+                "
+              >
+                2 OF 5 GRADED ITEMS COMPLETE
+              </div>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div
+            style="
+              padding: 32px 40px 48px;
+              display: grid;
+              grid-template-columns: 1fr 300px;
+              gap: 28px;
+              align-items: start;
+              flex: 1;
+            "
+          >
+            <!-- Content sequence -->
+            <div style="display: flex; flex-direction: column; gap: 12px">
+              <!-- 1 Lecture videos -->
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 14px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                  "
+                >
+                  <div
+                    style="font-weight: 900; font-size: 13px; color: #e5c25e"
+                  >
+                    1
+                  </div>
+                  <div
+                    style="
+                      font-weight: 800;
+                      font-size: 14px;
+                      color: #ffffff;
+                      flex: 1;
+                    "
+                  >
+                    Lecture Videos
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #5fcdbd;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    ✓ COMPLETED
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 0;
+                  "
+                >
+                  <div
+                    style="
+                      padding: 14px 18px;
+                      border-right: 1px solid rgba(255, 255, 255, 0.08);
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center; gap: 8px">
+                      <div
+                        style="
+                          width: 24px;
+                          height: 24px;
+                          border-radius: 50%;
+                          background: #1f7a6f;
+                          color: #ffffff;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 9px;
+                        "
+                      >
+                        ▶
+                      </div>
+                      <div
+                        style="
+                          font-size: 10px;
+                          color: #5fcdbd;
+                          font-weight: 800;
+                        "
+                      >
+                        WATCHED
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #ffffff;
+                        line-height: 1.4;
+                      "
+                    >
+                      Radiology &amp; Imaging Language
+                    </div>
+                    <div style="font-size: 10.5px; color: #66747f">28 min</div>
+                  </div>
+                  <div
+                    style="
+                      padding: 14px 18px;
+                      border-right: 1px solid rgba(255, 255, 255, 0.08);
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center; gap: 8px">
+                      <div
+                        style="
+                          width: 24px;
+                          height: 24px;
+                          border-radius: 50%;
+                          background: #1f7a6f;
+                          color: #ffffff;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 9px;
+                        "
+                      >
+                        ▶
+                      </div>
+                      <div
+                        style="
+                          font-size: 10px;
+                          color: #5fcdbd;
+                          font-weight: 800;
+                        "
+                      >
+                        WATCHED
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #ffffff;
+                        line-height: 1.4;
+                      "
+                    >
+                      Reading the Diagnostic Report
+                    </div>
+                    <div style="font-size: 10.5px; color: #66747f">22 min</div>
+                  </div>
+                  <div
+                    style="
+                      padding: 14px 18px;
+                      display: flex;
+                      flex-direction: column;
+                      gap: 6px;
+                    "
+                  >
+                    <div style="display: flex; align-items: center; gap: 8px">
+                      <div
+                        style="
+                          width: 24px;
+                          height: 24px;
+                          border-radius: 50%;
+                          background: #1f7a6f;
+                          color: #ffffff;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          font-size: 9px;
+                        "
+                      >
+                        ▶
+                      </div>
+                      <div
+                        style="
+                          font-size: 10px;
+                          color: #5fcdbd;
+                          font-weight: 800;
+                        "
+                      >
+                        WATCHED
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        font-size: 12px;
+                        font-weight: 700;
+                        color: #ffffff;
+                        line-height: 1.4;
+                      "
+                    >
+                      AI in Diagnostic Imaging — Executive View
+                    </div>
+                    <div style="font-size: 10.5px; color: #66747f">18 min</div>
+                  </div>
+                </div>
+                <div
+                  style="
+                    padding: 10px 22px;
+                    border-top: 1px solid rgba(255, 255, 255, 0.08);
+                    display: flex;
+                    gap: 14px;
+                    align-items: center;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 9.5px;
+                      font-weight: 800;
+                      color: #0b131b;
+                      background: #c9a13b;
+                      padding: 3px 8px;
+                    "
+                  >
+                    SLIDES
+                  </div>
+                  <div style="font-size: 11px; color: #8e9aa6">
+                    Slide decks (PDF + PPT): imaging modalities · report anatomy
+                    · diagnostic vocabulary
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2 Readings -->
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 14px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                  "
+                >
+                  <div
+                    style="font-weight: 900; font-size: 13px; color: #e5c25e"
+                  >
+                    2
+                  </div>
+                  <div
+                    style="
+                      font-weight: 800;
+                      font-size: 14px;
+                      color: #ffffff;
+                      flex: 1;
+                    "
+                  >
+                    Readings
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #5fcdbd;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    ✓ COMPLETED
+                  </div>
+                </div>
+                <div
+                  style="
+                    padding: 14px 22px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                  "
+                >
+                  <div style="display: flex; gap: 12px; align-items: baseline">
+                    <div
+                      style="
+                        font-size: 9px;
+                        font-weight: 800;
+                        color: #0b131b;
+                        background: #c9a13b;
+                        padding: 3px 8px;
+                        flex-shrink: 0;
+                      "
+                    >
+                      REQUIRED
+                    </div>
+                    <div
+                      style="font-size: 12px; color: #c8d2dc; line-height: 1.5"
+                    >
+                      Medical terminology reference — Ch. 9: Diagnostic &amp;
+                      Imaging Terms · Workbook units 16–18
+                    </div>
+                  </div>
+                  <div style="display: flex; gap: 12px; align-items: baseline">
+                    <div
+                      style="
+                        font-size: 9px;
+                        font-weight: 800;
+                        color: #8e9aa6;
+                        border: 1px solid rgba(255, 255, 255, 0.25);
+                        padding: 2px 8px;
+                        flex-shrink: 0;
+                      "
+                    >
+                      SUPPLEMENTAL
+                    </div>
+                    <div
+                      style="font-size: 12px; color: #8e9aa6; line-height: 1.5"
+                    >
+                      AI imaging-interpretation review article · radiology case
+                      digest (digital library)
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 3 Interactive lab -->
+              <div
+                style="
+                  background: linear-gradient(
+                    110deg,
+                    rgba(201, 161, 59, 0.14),
+                    rgba(201, 161, 59, 0.04)
+                  );
+                  border: 1px solid #c9a13b;
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 14px 22px;
+                    border-bottom: 1px solid rgba(201, 161, 59, 0.4);
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                  "
+                >
+                  <div
+                    style="font-weight: 900; font-size: 13px; color: #e5c25e"
+                  >
+                    3
+                  </div>
+                  <div
+                    style="
+                      font-weight: 800;
+                      font-size: 14px;
+                      color: #ffffff;
+                      flex: 1;
+                    "
+                  >
+                    Interactive Lab — H5P
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #ffd97a;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    DUE SAT JUN 14
+                  </div>
+                </div>
+                <div
+                  style="
+                    padding: 16px 22px;
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    gap: 24px;
+                    align-items: center;
+                  "
+                >
+                  <div style="display: flex; flex-direction: column; gap: 5px">
+                    <div
+                      style="
+                        font-size: 13.5px;
+                        font-weight: 800;
+                        color: #ffffff;
+                      "
+                    >
+                      Imaging Terminology Builder
+                    </div>
+                    <div
+                      style="
+                        font-size: 11.5px;
+                        color: #9da8b2;
+                        line-height: 1.6;
+                      "
+                    >
+                      Drag-and-drop term construction, radiology image matching,
+                      and modality identification. Labs count 20% of your course
+                      grade.
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      background: #c9a13b;
+                      color: #0b131b;
+                      font-size: 11px;
+                      font-weight: 900;
+                      padding: 10px 22px;
+                      border-radius: 999px;
+                      cursor: pointer;
+                    "
+                    style-hover="background: #E0B94A;"
+                  >
+                    START LAB →
+                  </div>
+                </div>
+              </div>
+
+              <!-- 4 Clinical correlation -->
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 14px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                  "
+                >
+                  <div
+                    style="font-weight: 900; font-size: 13px; color: #e5c25e"
+                  >
+                    4
+                  </div>
+                  <div
+                    style="
+                      font-weight: 800;
+                      font-size: 14px;
+                      color: #ffffff;
+                      flex: 1;
+                    "
+                  >
+                    Clinical Correlation — Executive Case Study
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #8e9aa6;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    NOT STARTED
+                  </div>
+                </div>
+                <div
+                  style="
+                    padding: 16px 22px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                  "
+                >
+                  <div
+                    style="
+                      font-family: &quot;Source Serif 4&quot;, serif;
+                      font-style: italic;
+                      font-size: 13px;
+                      color: #c8d2dc;
+                      line-height: 1.65;
+                    "
+                  >
+                    A 58-year-old executive presents with chest pain and
+                    shoulder numbness. The radiology report references cervical
+                    compression. Decode the diagnostic language, identify the
+                    imaging findings, and brief the hospital board on care
+                    implications.
+                  </div>
+                  <div style="font-size: 11px; color: #66747f">
+                    Analyze: terminology involved · imaging findings · executive
+                    healthcare implications
+                  </div>
+                </div>
+              </div>
+
+              <!-- 5 Discussion -->
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 14px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                  "
+                >
+                  <div
+                    style="font-weight: 900; font-size: 13px; color: #e5c25e"
+                  >
+                    5
+                  </div>
+                  <div
+                    style="
+                      font-weight: 800;
+                      font-size: 14px;
+                      color: #ffffff;
+                      flex: 1;
+                    "
+                  >
+                    Discussion Board
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #8e9aa6;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    0 OF 4 POSTS
+                  </div>
+                </div>
+                <div
+                  style="
+                    padding: 16px 22px;
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    gap: 24px;
+                    align-items: center;
+                  "
+                >
+                  <div style="display: flex; flex-direction: column; gap: 5px">
+                    <div
+                      style="
+                        font-size: 13px;
+                        font-weight: 700;
+                        color: #c8d2dc;
+                        line-height: 1.55;
+                      "
+                    >
+                      “How will AI-driven imaging interpretation change the
+                      language of diagnostics — and who needs to understand it?”
+                    </div>
+                    <div style="font-size: 11px; color: #66747f">
+                      Post an original response + reply to 3 peers · 10% of
+                      course grade
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      border: 1px solid rgba(255, 255, 255, 0.3);
+                      color: #ffffff;
+                      font-size: 11px;
+                      font-weight: 800;
+                      padding: 9px 20px;
+                      border-radius: 999px;
+                      cursor: pointer;
+                    "
+                    style-hover="border-color: #C9A13B; color: #E5C25E;"
+                  >
+                    OPEN FORUM
+                  </div>
+                </div>
+              </div>
+
+              <!-- 6 Quiz -->
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 14px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                  "
+                >
+                  <div
+                    style="font-weight: 900; font-size: 13px; color: #e5c25e"
+                  >
+                    6
+                  </div>
+                  <div
+                    style="
+                      font-weight: 800;
+                      font-size: 14px;
+                      color: #ffffff;
+                      flex: 1;
+                    "
+                  >
+                    Weekly Quiz
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #66747f;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    🔒 UNLOCKS AFTER LAB
+                  </div>
+                </div>
+                <a
+                  href="AZMSI LMS Quiz.dc.html"
+                  style="
+                    padding: 16px 22px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+                  "
+                >
+                  <div style="display: flex; flex-direction: column; gap: 5px">
+                    <div
+                      style="font-size: 13px; font-weight: 700; color: #c8d2dc"
+                    >
+                      Module 6 Quiz — Diagnostic &amp; Imaging Terms
+                    </div>
+                    <div style="font-size: 11px; color: #66747f">
+                      20 questions · multiple choice, labeling, matching, image
+                      interpretation · passing score 80% · 2 attempts
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      flex-shrink: 0;
+                      border: 1px solid rgba(255, 255, 255, 0.25);
+                      color: #ffffff;
+                      font-size: 10.5px;
+                      font-weight: 800;
+                      padding: 8px 16px;
+                      border-radius: 999px;
+                    "
+                    style-hover="border-color: #C9A13B; color: #E5C25E;"
+                  >
+                    PREVIEW →
+                  </div>
+                </a>
+              </div>
+
+              <!-- 7 Assignment -->
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 14px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                  "
+                >
+                  <div
+                    style="font-weight: 900; font-size: 13px; color: #e5c25e"
+                  >
+                    7
+                  </div>
+                  <div
+                    style="
+                      font-weight: 800;
+                      font-size: 14px;
+                      color: #ffffff;
+                      flex: 1;
+                    "
+                  >
+                    Assignment
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #8e9aa6;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    DUE MON JUN 16
+                  </div>
+                </div>
+                <div
+                  style="
+                    padding: 16px 22px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                  "
+                >
+                  <div
+                    style="font-size: 13px; font-weight: 700; color: #c8d2dc"
+                  >
+                    Executive briefing: translating a diagnostic report for a
+                    hospital board
+                  </div>
+                  <div style="font-size: 11px; color: #66747f">
+                    2–3 pages · rubric scoring + recorded faculty feedback · 20%
+                    of course grade (assignments total)
+                  </div>
+                </div>
+              </div>
+
+              <!-- 8 Reflection -->
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 14px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                  "
+                >
+                  <div
+                    style="font-weight: 900; font-size: 13px; color: #e5c25e"
+                  >
+                    8
+                  </div>
+                  <div
+                    style="
+                      font-weight: 800;
+                      font-size: 14px;
+                      color: #ffffff;
+                      flex: 1;
+                    "
+                  >
+                    Reflection Journal
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #8e9aa6;
+                      letter-spacing: 0.1em;
+                    "
+                  >
+                    PRIVATE · UNGRADED
+                  </div>
+                </div>
+                <div style="padding: 16px 22px">
+                  <div
+                    style="
+                      font-family: &quot;Source Serif 4&quot;, serif;
+                      font-style: italic;
+                      font-size: 13px;
+                      color: #8e9aa6;
+                      line-height: 1.6;
+                    "
+                  >
+                    “How can fluency in diagnostic language improve your
+                    effectiveness as a healthcare innovation leader?”
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right rail -->
+            <div style="display: flex; flex-direction: column; gap: 16px">
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  padding: 18px 20px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                "
+              >
+                <div
+                  style="
+                    font-size: 10.5px;
+                    font-weight: 800;
+                    color: #e5c25e;
+                    letter-spacing: 0.14em;
+                  "
+                >
+                  WEEK 6 CHECKLIST
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <div
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      padding: 7px 0;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                    "
+                  >
+                    <div
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: #1f7a6f;
+                        color: #ffffff;
+                        font-size: 9px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      ✓
+                    </div>
+                    <div style="font-size: 11.5px; color: #c8d2dc; flex: 1">
+                      Lecture videos (3)
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      padding: 7px 0;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                    "
+                  >
+                    <div
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: #1f7a6f;
+                        color: #ffffff;
+                        font-size: 9px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                      "
+                    >
+                      ✓
+                    </div>
+                    <div style="font-size: 11.5px; color: #c8d2dc; flex: 1">
+                      Required readings
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      padding: 7px 0;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                    "
+                  >
+                    <div
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        border: 1.5px solid #c9a13b;
+                      "
+                    ></div>
+                    <div
+                      style="
+                        font-size: 11.5px;
+                        color: #ffd97a;
+                        flex: 1;
+                        font-weight: 700;
+                      "
+                    >
+                      H5P lab — due Jun 14
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      padding: 7px 0;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                    "
+                  >
+                    <div
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        border: 1.5px solid rgba(255, 255, 255, 0.25);
+                      "
+                    ></div>
+                    <div style="font-size: 11.5px; color: #8e9aa6; flex: 1">
+                      Case study
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      padding: 7px 0;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                    "
+                  >
+                    <div
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        border: 1.5px solid rgba(255, 255, 255, 0.25);
+                      "
+                    ></div>
+                    <div style="font-size: 11.5px; color: #8e9aa6; flex: 1">
+                      Discussion (1 + 3 replies)
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      padding: 7px 0;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+                    "
+                  >
+                    <div
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        border: 1.5px solid rgba(255, 255, 255, 0.25);
+                      "
+                    ></div>
+                    <div style="font-size: 11.5px; color: #8e9aa6; flex: 1">
+                      Quiz (pass ≥ 80%)
+                    </div>
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      gap: 10px;
+                      align-items: center;
+                      padding: 7px 0;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        border: 1.5px solid rgba(255, 255, 255, 0.25);
+                      "
+                    ></div>
+                    <div style="font-size: 11.5px; color: #8e9aa6; flex: 1">
+                      Assignment — due Jun 16
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  padding: 18px 20px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                "
+              >
+                <div
+                  style="
+                    font-size: 10.5px;
+                    font-weight: 800;
+                    color: #e5c25e;
+                    letter-spacing: 0.14em;
+                  "
+                >
+                  LEARNING OUTCOMES
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    font-size: 11.5px;
+                    color: #9da8b2;
+                    line-height: 1.5;
+                  "
+                >
+                  <div style="display: flex; gap: 10px">
+                    <span style="color: #c9a13b; font-weight: 900">—</span
+                    ><span>Decode radiology &amp; imaging terminology</span>
+                  </div>
+                  <div style="display: flex; gap: 10px">
+                    <span style="color: #c9a13b; font-weight: 900">—</span
+                    ><span>Interpret diagnostic report structure</span>
+                  </div>
+                  <div style="display: flex; gap: 10px">
+                    <span style="color: #c9a13b; font-weight: 900">—</span
+                    ><span>Map imaging terms to anatomical systems</span>
+                  </div>
+                  <div style="display: flex; gap: 10px">
+                    <span style="color: #c9a13b; font-weight: 900">—</span
+                    ><span>Brief executives using diagnostic language</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                style="
+                  background: linear-gradient(135deg, #14524a, #0e2b33);
+                  border: 1px solid rgba(255, 255, 255, 0.12);
+                  padding: 18px 20px;
+                  display: flex;
+                  flex-direction: column;
+                  gap: 8px;
+                "
+              >
+                <div
+                  style="
+                    font-size: 10.5px;
+                    font-weight: 800;
+                    color: #5fcdbd;
+                    letter-spacing: 0.14em;
+                  "
+                >
+                  FACULTY FEEDBACK
+                </div>
+                <div
+                  style="
+                    font-size: 12px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    line-height: 1.5;
+                  "
+                >
+                  Week 5 assignment scored — 93%
+                </div>
+                <div style="font-size: 11px; color: #bfe6de; line-height: 1.55">
+                  Rubric scoring + recorded feedback from Dr. Okafor are in your
+                  gradebook.
+                </div>
+                <div
+                  style="
+                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    color: #ffffff;
+                    font-size: 10.5px;
+                    font-weight: 800;
+                    text-align: center;
+                    padding: 8px 0;
+                    border-radius: 999px;
+                    margin-top: 4px;
+                    cursor: pointer;
+                  "
+                  style-hover="border-color: #5FCDBD;"
+                >
+                  VIEW FEEDBACK
+                </div>
+              </div>
+
+              <a
+                href="AZMSI LMS Course.dc.html"
+                style="
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  color: #8e9aa6;
+                  font-size: 11px;
+                  font-weight: 800;
+                  text-align: center;
+                  padding: 11px 0;
+                  border-radius: 999px;
+                  display: block;
+                  letter-spacing: 0.06em;
+                "
+                style-hover="color: #FFFFFF; border-color: rgba(255,255,255,0.4);"
+                >← BACK TO COURSE HOME</a
+              >
+            </div>
+          </div>
+
+          <!-- Gold footer -->
+          <div
+            style="
+              background: #c9a13b;
+              padding: 18px 40px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 32px;
+            "
+          >
+            <div style="display: flex; flex-direction: column; gap: 1px">
+              <div style="font-weight: 900; font-size: 12.5px; color: #15212e">
+                AZMSI Student Portal — lms.azmsi.com
+              </div>
+              <div style="font-size: 10px; color: #4a3f1e">
+                support<span>@</span>azmsi.com ·
+                academics<span>@</span>azmsi.com
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                gap: 18px;
+                font-size: 11px;
+                font-weight: 700;
+                color: #15212e;
+              "
+            >
+              <span style="border-bottom: 1px solid #15212e">Gradebook</span>
+              <span style="border-bottom: 1px solid #15212e"
+                >Academic Integrity</span
+              >
+              <span style="border-bottom: 1px solid #15212e"
+                >Technical Support</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </x-dc>
+  </body>
+</html>

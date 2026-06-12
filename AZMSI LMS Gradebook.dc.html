@@ -1,0 +1,889 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./support.js"></script>
+  </head>
+  <body>
+    <x-dc>
+      <helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          html,
+          body {
+            margin: 0;
+            padding: 0;
+            background: #0b131b;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          a {
+            text-decoration: none;
+          }
+        </style>
+      </helmet>
+
+      <div
+        data-screen-label="LMS — Gradebook"
+        style="
+          font-family: &quot;Archivo&quot;, sans-serif;
+          background: #0b131b;
+          min-height: 100vh;
+          display: grid;
+          grid-template-columns: 240px 1fr;
+        "
+      >
+        <!-- Sidebar -->
+        <div
+          style="
+            background: #080f15;
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            flex-direction: column;
+            padding: 24px 16px;
+            gap: 3px;
+          "
+        >
+          <div
+            style="
+              padding: 4px 12px 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 3px;
+            "
+          >
+            <div
+              style="
+                font-weight: 900;
+                font-size: 17px;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+              "
+            >
+              AZMSI
+            </div>
+            <div
+              style="
+                font-size: 8px;
+                letter-spacing: 0.3em;
+                color: #c9a13b;
+                font-weight: 700;
+              "
+            >
+              STUDENT PORTAL · LMS
+            </div>
+          </div>
+          <a
+            href="AZMSI LMS Dashboard.dc.html"
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+              display: block;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+            >Dashboard</a
+          >
+          <a
+            href="AZMSI LMS Course.dc.html"
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+              display: block;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+            >My Courses</a
+          >
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Calendar
+          </div>
+          <div
+            style="
+              background: rgba(201, 161, 59, 0.14);
+              color: #e5c25e;
+              font-size: 13px;
+              font-weight: 700;
+              padding: 10px 12px;
+              border-left: 3px solid #c9a13b;
+            "
+          >
+            Grades
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Research Tracker
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Library
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Forums
+          </div>
+          <div
+            style="
+              color: #8e9aa6;
+              font-size: 13px;
+              padding: 10px 12px;
+              border-left: 3px solid transparent;
+            "
+            style-hover="color: #FFFFFF; background: rgba(255,255,255,0.04);"
+          >
+            Live Classes
+          </div>
+          <div style="flex: 1"></div>
+          <div
+            style="
+              border-top: 1px solid rgba(255, 255, 255, 0.08);
+              padding-top: 14px;
+            "
+          >
+            <a
+              href="AZMSI Website.dc.html"
+              style="
+                color: #66747f;
+                font-size: 12px;
+                padding: 8px 12px;
+                display: block;
+              "
+              style-hover="color: #E5C25E;"
+              >← azmsi.com</a
+            >
+          </div>
+        </div>
+
+        <!-- Main -->
+        <div style="display: flex; flex-direction: column; min-height: 100vh">
+          <!-- Top bar -->
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              padding: 16px 40px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+              gap: 24px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                font-size: 12px;
+                color: #66747f;
+              "
+            >
+              <a
+                href="AZMSI LMS Dashboard.dc.html"
+                style="color: #66747f"
+                style-hover="color: #FFFFFF;"
+                >Dashboard</a
+              >
+              <span>/</span
+              ><span style="color: #e5c25e; font-weight: 700">Grades</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 10px">
+              <div
+                style="
+                  width: 34px;
+                  height: 34px;
+                  border-radius: 50%;
+                  background: #1f7a6f;
+                  color: #ffffff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 12.5px;
+                  font-weight: 800;
+                "
+              >
+                DR
+              </div>
+              <div style="display: flex; flex-direction: column">
+                <div
+                  style="font-size: 12.5px; font-weight: 700; color: #ffffff"
+                >
+                  Daniel Reyes
+                </div>
+                <div style="font-size: 10.5px; color: #66747f">
+                  eMD Candidate · Cohort 1
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Header -->
+          <div
+            style="
+              padding: 36px 40px 26px;
+              border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+              display: flex;
+              justify-content: space-between;
+              align-items: flex-end;
+              gap: 32px;
+            "
+          >
+            <div style="display: flex; flex-direction: column; gap: 8px">
+              <div
+                style="
+                  font-size: 11px;
+                  font-weight: 900;
+                  color: #e5c25e;
+                  letter-spacing: 0.16em;
+                "
+              >
+                GRADEBOOK · QUARTER 1
+              </div>
+              <h1
+                style="
+                  font-weight: 900;
+                  font-size: 32px;
+                  color: #ffffff;
+                  margin: 0;
+                  letter-spacing: -0.01em;
+                "
+              >
+                Your Grades
+              </h1>
+              <div
+                style="
+                  font-family: &quot;Source Serif 4&quot;, serif;
+                  font-style: italic;
+                  font-size: 14px;
+                  color: #8e9aa6;
+                "
+              >
+                All quizzes require a passing score of 80%. Faculty provide
+                rubric scoring and recorded feedback on every assignment.
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                gap: 0;
+                border: 1px solid rgba(255, 255, 255, 0.12);
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 2px;
+                  padding: 14px 26px;
+                  border-right: 1px solid rgba(255, 255, 255, 0.12);
+                "
+              >
+                <div style="font-weight: 900; font-size: 26px; color: #ffd97a">
+                  92.4%
+                </div>
+                <div
+                  style="
+                    font-size: 9.5px;
+                    color: #66747f;
+                    font-weight: 800;
+                    letter-spacing: 0.1em;
+                  "
+                >
+                  QUARTER GPA-EQ
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 2px;
+                  padding: 14px 26px;
+                "
+              >
+                <div style="font-weight: 900; font-size: 26px; color: #ffffff">
+                  16
+                </div>
+                <div
+                  style="
+                    font-size: 9.5px;
+                    color: #66747f;
+                    font-weight: 800;
+                    letter-spacing: 0.1em;
+                  "
+                >
+                  CREDITS IN PROGRESS
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div
+            style="
+              padding: 32px 40px 48px;
+              display: flex;
+              flex-direction: column;
+              gap: 28px;
+              flex: 1;
+            "
+          >
+            <!-- Course rows -->
+            <div style="display: flex; flex-direction: column; gap: 14px">
+              <div style="font-weight: 800; font-size: 15px; color: #ffffff">
+                Courses
+              </div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  gap: 14px;
+                "
+              >
+                <a
+                  href="AZMSI LMS Course.dc.html"
+                  style="
+                    background: #1f7a6f;
+                    padding: 16px 18px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    color: inherit;
+                  "
+                  style-hover="transform: translateY(-3px);"
+                >
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: baseline;
+                    "
+                  >
+                    <span
+                      style="font-size: 11px; font-weight: 900; color: #ffffff"
+                      >▸ EMD-101</span
+                    ><span
+                      style="font-size: 20px; font-weight: 900; color: #ffd97a"
+                      >94.1%</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      font-size: 11.5px;
+                      color: #c9e8e1;
+                      font-weight: 600;
+                      line-height: 1.4;
+                    "
+                  >
+                    Medical Terminology &amp; Clinical Language
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #bfe6de;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                    "
+                  >
+                    A · 4 CREDITS · WK 6/10
+                  </div>
+                </a>
+                <div
+                  style="
+                    background: #131d28;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 16px 18px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: baseline;
+                    "
+                  >
+                    <span
+                      style="font-size: 11px; font-weight: 900; color: #e5c25e"
+                      >▸ EMD-102</span
+                    ><span
+                      style="font-size: 20px; font-weight: 900; color: #ffffff"
+                      >90.6%</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      font-size: 11.5px;
+                      color: #c8d2dc;
+                      font-weight: 600;
+                      line-height: 1.4;
+                    "
+                  >
+                    Human Anatomy I
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #66747f;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                    "
+                  >
+                    A− · 4 CREDITS · WK 6/10
+                  </div>
+                </div>
+                <div
+                  style="
+                    background: #131d28;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 16px 18px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: baseline;
+                    "
+                  >
+                    <span
+                      style="font-size: 11px; font-weight: 900; color: #e5c25e"
+                      >▸ EMD-103</span
+                    ><span
+                      style="font-size: 20px; font-weight: 900; color: #ffffff"
+                      >88.2%</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      font-size: 11.5px;
+                      color: #c8d2dc;
+                      font-weight: 600;
+                      line-height: 1.4;
+                    "
+                  >
+                    Cellular Biology &amp; Genetics
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #66747f;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                    "
+                  >
+                    B+ · 4 CREDITS · WK 6/10
+                  </div>
+                </div>
+                <div
+                  style="
+                    background: #131d28;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 16px 18px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                  "
+                >
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: baseline;
+                    "
+                  >
+                    <span
+                      style="font-size: 11px; font-weight: 900; color: #e5c25e"
+                      >▸ EMD-104</span
+                    ><span
+                      style="font-size: 20px; font-weight: 900; color: #ffffff"
+                      >96.8%</span
+                    >
+                  </div>
+                  <div
+                    style="
+                      font-size: 11.5px;
+                      color: #c8d2dc;
+                      font-weight: 600;
+                      line-height: 1.4;
+                    "
+                  >
+                    Healthcare Systems &amp; Global Medicine
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #66747f;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                    "
+                  >
+                    A · 4 CREDITS · WK 6/10
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- EMD-101 detail breakdown -->
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 1.55fr 1fr;
+                gap: 24px;
+                align-items: start;
+              "
+            >
+              <div
+                style="
+                  background: #131d28;
+                  border: 1px solid rgba(255, 255, 255, 0.1);
+                  display: flex;
+                  flex-direction: column;
+                "
+              >
+                <div
+                  style="
+                    padding: 16px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                  "
+                >
+                  <div
+                    style="font-weight: 800; font-size: 14px; color: #ffffff"
+                  >
+                    EMD-101 — Graded Items
+                  </div>
+                  <div
+                    style="
+                      font-size: 10.5px;
+                      color: #66747f;
+                      font-weight: 700;
+                      letter-spacing: 0.08em;
+                    "
+                  >
+                    RUNNING GRADE 94.1%
+                  </div>
+                </div>
+                <!-- table head -->
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: 2.4fr 1fr 1fr 0.9fr;
+                    padding: 10px 22px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+                    font-size: 9.5px;
+                    font-weight: 800;
+                    color: #66747f;
+                    letter-spacing: 0.08em;
+                  "
+                >
+                  <div>ITEM</div>
+                  <div>CATEGORY</div>
+                  <div>SCORE</div>
+                  <div style="text-align: right">STATUS</div>
+                </div>
+                <sc-for list="{{ items }}" as="row" hint-placeholder-count="8">
+                  <div
+                    style="
+                      display: grid;
+                      grid-template-columns: 2.4fr 1fr 1fr 0.9fr;
+                      padding: 12px 22px;
+                      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                      align-items: center;
+                    "
+                  >
+                    <div
+                      style="display: flex; flex-direction: column; gap: 1px"
+                    >
+                      <div
+                        style="
+                          font-size: 12.5px;
+                          font-weight: 700;
+                          color: #ffffff;
+                        "
+                      >
+                        {{ row.name }}
+                      </div>
+                      <div style="font-size: 10px; color: #66747f">
+                        {{ row.week }}
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        font-size: 10.5px;
+                        color: #8e9aa6;
+                        font-weight: 600;
+                      "
+                    >
+                      {{ row.cat }}
+                    </div>
+                    <div
+                      style="font-size: 13px; font-weight: 800; color: {{ row.color }};"
+                    >
+                      {{ row.score }}
+                    </div>
+                    <div style="text-align: right">
+                      <span
+                        style="font-size: 9px; font-weight: 800; color: {{ row.color }}; border: 1px solid {{ row.color }}; padding: 3px 8px; opacity: 0.9;"
+                        >{{ row.status }}</span
+                      >
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+
+              <!-- Weighting (rubric) -->
+              <div style="display: flex; flex-direction: column; gap: 16px">
+                <div
+                  style="
+                    background: #131d28;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    padding: 18px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 10.5px;
+                      font-weight: 800;
+                      color: #e5c25e;
+                      letter-spacing: 0.14em;
+                    "
+                  >
+                    GRADE WEIGHTING (RUBRIC)
+                  </div>
+                  <sc-for
+                    list="{{ weights }}"
+                    as="w"
+                    hint-placeholder-count="6"
+                  >
+                    <div
+                      style="display: flex; flex-direction: column; gap: 5px"
+                    >
+                      <div
+                        style="
+                          display: flex;
+                          justify-content: space-between;
+                          font-size: 11.5px;
+                        "
+                      >
+                        <span style="color: #c8d2dc">{{ w.label }}</span
+                        ><span style="color: #ffffff; font-weight: 800"
+                          >{{ w.pct }}</span
+                        >
+                      </div>
+                      <div
+                        style="
+                          height: 5px;
+                          background: rgba(255, 255, 255, 0.08);
+                        "
+                      >
+                        <div
+                          style="height: 5px; width: {{ w.width }}; background: #C9A13B;"
+                        ></div>
+                      </div>
+                    </div>
+                  </sc-for>
+                </div>
+
+                <div
+                  style="
+                    background: linear-gradient(135deg, #14524a, #0e2b33);
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    padding: 18px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 10.5px;
+                      font-weight: 800;
+                      color: #5fcdbd;
+                      letter-spacing: 0.14em;
+                    "
+                  >
+                    LATEST FACULTY FEEDBACK
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: #ffffff;
+                      font-weight: 700;
+                      line-height: 1.5;
+                    "
+                  >
+                    Week 5 assignment — 93% · “Strong nomenclature accuracy;
+                    tighten executive summary.”
+                  </div>
+                  <div
+                    style="
+                      border: 1px solid rgba(255, 255, 255, 0.3);
+                      color: #ffffff;
+                      font-size: 10.5px;
+                      font-weight: 800;
+                      text-align: center;
+                      padding: 8px 0;
+                      border-radius: 999px;
+                      margin-top: 4px;
+                      cursor: pointer;
+                    "
+                    style-hover="border-color: #5FCDBD;"
+                  >
+                    PLAY RECORDED FEEDBACK ▶
+                  </div>
+                </div>
+
+                <div
+                  style="
+                    background: #131d28;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-left: 3px solid #c9a13b;
+                    padding: 16px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 10.5px;
+                      font-weight: 800;
+                      color: #e5c25e;
+                      letter-spacing: 0.12em;
+                    "
+                  >
+                    PENDING
+                  </div>
+                  <div
+                    style="font-size: 12px; color: #c8d2dc; line-height: 1.55"
+                  >
+                    Final exam (20%) opens after Week 10 · proctored via Safe
+                    Exam Browser.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gold footer -->
+          <div
+            style="
+              background: #c9a13b;
+              padding: 18px 40px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              gap: 32px;
+            "
+          >
+            <div style="display: flex; flex-direction: column; gap: 1px">
+              <div style="font-weight: 900; font-size: 12.5px; color: #15212e">
+                AZMSI Student Portal — lms.azmsi.com
+              </div>
+              <div style="font-size: 10px; color: #4a3f1e">
+                registrar<span>@</span>azmsi.com ·
+                academics<span>@</span>azmsi.com
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                gap: 18px;
+                font-size: 11px;
+                font-weight: 700;
+                color: #15212e;
+              "
+            >
+              <span style="border-bottom: 1px solid #15212e"
+                >Transcript Request</span
+              >
+              <span style="border-bottom: 1px solid #15212e"
+                >Academic Standing</span
+              >
+              <span style="border-bottom: 1px solid #15212e"
+                >Technical Support</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </x-dc>
+    <script type="text/x-dc" data-dc-script>
+      class Component extends DCLogic {
+        renderVals() {
+          const teal = '#5FCDBD', gold = '#FFD97A', white = '#FFFFFF', mute = '#8E9AA6';
+          return {
+            items: [
+              { name: 'Module 1 Quiz — Foundations', week: 'Week 1', cat: 'Quiz', score: '96%', status: 'GRADED', color: teal },
+              { name: 'Module 2 Quiz — Word Roots', week: 'Week 2', cat: 'Quiz', score: '92%', status: 'GRADED', color: teal },
+              { name: 'Anatomy Labeling Lab (H5P)', week: 'Week 3', cat: 'Lab', score: '100%', status: 'GRADED', color: teal },
+              { name: 'Pathology Report Assignment', week: 'Week 4', cat: 'Assignment', score: '91%', status: 'GRADED', color: teal },
+              { name: 'Midterm Examination', week: 'Week 5', cat: 'Midterm', score: '93%', status: 'GRADED', color: teal },
+              { name: 'Imaging Terminology Builder', week: 'Week 6', cat: 'Lab', score: '—', status: 'DUE JUN 14', color: gold },
+              { name: 'Module 6 Quiz — Imaging Terms', week: 'Week 6', cat: 'Quiz', score: '—', status: 'LOCKED', color: mute },
+              { name: 'Final Examination', week: 'Week 10', cat: 'Final', score: '—', status: 'PENDING', color: mute }
+            ],
+            weights: [
+              { label: 'Weekly quizzes', pct: '20%', width: '20%' },
+              { label: 'Discussion participation', pct: '10%', width: '10%' },
+              { label: 'Interactive labs', pct: '20%', width: '20%' },
+              { label: 'Assignments', pct: '20%', width: '20%' },
+              { label: 'Midterm', pct: '10%', width: '10%' },
+              { label: 'Final exam', pct: '20%', width: '20%' }
+            ]
+          };
+        }
+      }
+    </script>
+  </body>
+</html>

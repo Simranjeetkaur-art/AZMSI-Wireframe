@@ -1,0 +1,916 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./support.js"></script>
+  </head>
+  <body>
+    <x-dc>
+      <helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          html,
+          body {
+            margin: 0;
+            padding: 0;
+            background: #0b131b;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          a {
+            text-decoration: none;
+          }
+        </style>
+      </helmet>
+
+      <div
+        data-screen-label="Admissions — Applicant Portal"
+        style="
+          font-family: &quot;Archivo&quot;, sans-serif;
+          background: #0b131b;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <!-- Top nav -->
+        <div
+          style="
+            background: rgba(8, 15, 21, 0.96);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 48px;
+            gap: 32px;
+          "
+        >
+          <a
+            href="AZMSI Website.dc.html"
+            style="display: flex; flex-direction: column; gap: 2px"
+          >
+            <div
+              style="
+                font-weight: 900;
+                font-size: 16px;
+                letter-spacing: 0.02em;
+                color: #ffffff;
+              "
+            >
+              AZMSI
+            </div>
+            <div
+              style="
+                font-size: 7.5px;
+                letter-spacing: 0.3em;
+                color: #c9a13b;
+                font-weight: 700;
+              "
+            >
+              APPLY · APPLICANT PORTAL
+            </div>
+          </a>
+          <div
+            style="
+              display: flex;
+              gap: 26px;
+              align-items: center;
+              font-size: 13px;
+              font-weight: 600;
+              color: #8e9aa6;
+            "
+          >
+            <a
+              href="AZMSI Website.dc.html"
+              style="color: #8e9aa6"
+              style-hover="color: #FFFFFF;"
+              >Home</a
+            >
+            <a
+              href="AZMSI Course Catalog.dc.html"
+              style="color: #8e9aa6"
+              style-hover="color: #FFFFFF;"
+              >Curriculum</a
+            >
+            <span
+              style="
+                color: #e5c25e;
+                border-bottom: 2px solid #c9a13b;
+                padding-bottom: 2px;
+              "
+              >Admissions</span
+            >
+          </div>
+          <div style="display: flex; align-items: center; gap: 12px">
+            <div style="font-size: 11.5px; color: #8e9aa6">
+              Signed in as
+              <span style="color: #ffffff; font-weight: 700"
+                >amara.k@email.com</span
+              >
+            </div>
+            <div
+              style="
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: #1f7a6f;
+                color: #ffffff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                font-weight: 800;
+              "
+            >
+              AK
+            </div>
+          </div>
+        </div>
+
+        <!-- Header -->
+        <div
+          style="
+            padding: 44px 48px 30px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            background: linear-gradient(
+              180deg,
+              rgba(201, 161, 59, 0.07),
+              transparent 70%
+            );
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 40px;
+          "
+        >
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 12px;
+              max-width: 620px;
+            "
+          >
+            <div
+              style="
+                font-size: 11px;
+                font-weight: 900;
+                color: #e5c25e;
+                letter-spacing: 0.18em;
+              "
+            >
+              eMD APPLICATION · COHORT 2 · 2026
+            </div>
+            <h1
+              style="
+                font-weight: 900;
+                font-size: 38px;
+                color: #ffffff;
+                margin: 0;
+                line-height: 1.05;
+                letter-spacing: -0.015em;
+              "
+            >
+              Welcome, Amara — your application is underway.
+            </h1>
+            <div
+              style="
+                font-family: &quot;Source Serif 4&quot;, serif;
+                font-style: italic;
+                font-size: 15px;
+                color: #9da8b2;
+                line-height: 1.6;
+              "
+            >
+              Complete each step below. Your next action is the Admissions
+              Qualification Examination (AQE).
+            </div>
+          </div>
+          <div
+            style="
+              background: #131d28;
+              border: 1px solid rgba(255, 255, 255, 0.12);
+              padding: 18px 24px;
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              min-width: 230px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                font-size: 10.5px;
+                font-weight: 800;
+                letter-spacing: 0.08em;
+              "
+            >
+              <span style="color: #66747f">APPLICATION</span
+              ><span style="color: #ffffff">2 OF 4 DONE</span>
+            </div>
+            <div style="height: 6px; background: rgba(255, 255, 255, 0.08)">
+              <div style="height: 6px; width: 50%; background: #c9a13b"></div>
+            </div>
+            <div style="font-size: 11px; color: #8e9aa6">
+              Est. decision:
+              <span style="color: #ffffff; font-weight: 700"
+                >2–3 weeks after AQE</span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Body -->
+        <div
+          style="
+            padding: 36px 48px 56px;
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 32px;
+            align-items: start;
+            max-width: 1320px;
+            width: 100%;
+            margin: 0 auto;
+            flex: 1;
+          "
+        >
+          <!-- Steps -->
+          <div style="display: flex; flex-direction: column; gap: 14px">
+            <div style="font-weight: 800; font-size: 15px; color: #ffffff">
+              Your Application Steps
+            </div>
+
+            <!-- Step 1 done -->
+            <div
+              style="
+                background: #131d28;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 20px 24px;
+                display: flex;
+                gap: 18px;
+                align-items: center;
+              "
+            >
+              <div
+                style="
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background: #1f7a6f;
+                  color: #ffffff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 13px;
+                  font-weight: 800;
+                  flex-shrink: 0;
+                "
+              >
+                ✓
+              </div>
+              <div
+                style="display: flex; flex-direction: column; gap: 2px; flex: 1"
+              >
+                <div
+                  style="
+                    font-size: 10px;
+                    font-weight: 800;
+                    color: #5fcdbd;
+                    letter-spacing: 0.12em;
+                  "
+                >
+                  STEP 1 · COMPLETE
+                </div>
+                <div style="font-size: 15px; font-weight: 800; color: #ffffff">
+                  Create account &amp; submit application
+                </div>
+                <div style="font-size: 11.5px; color: #66747f">
+                  Personal details, academic history &amp; professional
+                  background submitted June 4.
+                </div>
+              </div>
+              <div
+                style="
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  color: #c8d2dc;
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  padding: 8px 16px;
+                  border-radius: 999px;
+                "
+              >
+                VIEW
+              </div>
+            </div>
+
+            <!-- Step 2 done -->
+            <div
+              style="
+                background: #131d28;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 20px 24px;
+                display: flex;
+                gap: 18px;
+                align-items: center;
+              "
+            >
+              <div
+                style="
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background: #1f7a6f;
+                  color: #ffffff;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 13px;
+                  font-weight: 800;
+                  flex-shrink: 0;
+                "
+              >
+                ✓
+              </div>
+              <div
+                style="display: flex; flex-direction: column; gap: 2px; flex: 1"
+              >
+                <div
+                  style="
+                    font-size: 10px;
+                    font-weight: 800;
+                    color: #5fcdbd;
+                    letter-spacing: 0.12em;
+                  "
+                >
+                  STEP 2 · COMPLETE
+                </div>
+                <div style="font-size: 15px; font-weight: 800; color: #ffffff">
+                  Upload documents
+                </div>
+                <div style="font-size: 11.5px; color: #66747f">
+                  Résumé/CV, statement of intent &amp; transcripts verified.
+                </div>
+              </div>
+              <div
+                style="
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  color: #c8d2dc;
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  padding: 8px 16px;
+                  border-radius: 999px;
+                "
+              >
+                VIEW
+              </div>
+            </div>
+
+            <!-- Step 3 ACTIVE - AQE -->
+            <div
+              style="
+                background: linear-gradient(
+                  110deg,
+                  rgba(201, 161, 59, 0.16),
+                  rgba(201, 161, 59, 0.04)
+                );
+                border: 1px solid #c9a13b;
+                padding: 24px;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+              "
+            >
+              <div style="display: flex; gap: 18px; align-items: flex-start">
+                <div
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: #c9a13b;
+                    color: #0b131b;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 13px;
+                    font-weight: 900;
+                    flex-shrink: 0;
+                  "
+                >
+                  3
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    flex: 1;
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 10px;
+                      font-weight: 800;
+                      color: #e5c25e;
+                      letter-spacing: 0.12em;
+                    "
+                  >
+                    STEP 3 · ACTION REQUIRED
+                  </div>
+                  <div
+                    style="font-size: 18px; font-weight: 900; color: #ffffff"
+                  >
+                    Admissions Qualification Examination (AQE)
+                  </div>
+                  <div
+                    style="
+                      font-size: 12px;
+                      color: #c8d2dc;
+                      line-height: 1.6;
+                      max-width: 560px;
+                    "
+                  >
+                    An adaptive examination drawn from a 2,000-question bank
+                    measuring scientific literacy, medical terminology, critical
+                    thinking, executive communication, healthcare systems &amp;
+                    research aptitude.
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  gap: 12px;
+                  padding-left: 48px;
+                "
+              >
+                <div
+                  style="
+                    border: 1px solid rgba(255, 255, 255, 0.16);
+                    padding: 12px 14px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                  "
+                >
+                  <div
+                    style="font-size: 18px; font-weight: 900; color: #ffffff"
+                  >
+                    ~120
+                  </div>
+                  <div
+                    style="
+                      font-size: 9px;
+                      color: #8e9aa6;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                    "
+                  >
+                    ADAPTIVE QUESTIONS
+                  </div>
+                </div>
+                <div
+                  style="
+                    border: 1px solid rgba(255, 255, 255, 0.16);
+                    padding: 12px 14px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                  "
+                >
+                  <div
+                    style="font-size: 18px; font-weight: 900; color: #ffffff"
+                  >
+                    90 min
+                  </div>
+                  <div
+                    style="
+                      font-size: 9px;
+                      color: #8e9aa6;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                    "
+                  >
+                    TIME LIMIT
+                  </div>
+                </div>
+                <div
+                  style="
+                    border: 1px solid rgba(255, 255, 255, 0.16);
+                    padding: 12px 14px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                  "
+                >
+                  <div
+                    style="font-size: 18px; font-weight: 900; color: #ffffff"
+                  >
+                    Online
+                  </div>
+                  <div
+                    style="
+                      font-size: 9px;
+                      color: #8e9aa6;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                    "
+                  >
+                    PROCTORED
+                  </div>
+                </div>
+                <div
+                  style="
+                    border: 1px solid rgba(255, 255, 255, 0.16);
+                    padding: 12px 14px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                  "
+                >
+                  <div
+                    style="font-size: 18px; font-weight: 900; color: #ffd97a"
+                  >
+                    6 sec
+                  </div>
+                  <div
+                    style="
+                      font-size: 9px;
+                      color: #8e9aa6;
+                      font-weight: 700;
+                      letter-spacing: 0.06em;
+                    "
+                  >
+                    SCHEDULED SLOT
+                  </div>
+                </div>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 12px;
+                  align-items: center;
+                  padding-left: 48px;
+                "
+              >
+                <a
+                  href="AZMSI LMS Quiz.dc.html"
+                  style="
+                    background: #c9a13b;
+                    color: #0b131b;
+                    font-size: 12.5px;
+                    font-weight: 900;
+                    padding: 12px 26px;
+                    border-radius: 999px;
+                    letter-spacing: 0.04em;
+                  "
+                  >BEGIN AQE →</a
+                >
+                <div
+                  style="
+                    border: 1.5px solid rgba(255, 255, 255, 0.4);
+                    color: #ffffff;
+                    font-size: 12.5px;
+                    font-weight: 700;
+                    padding: 11px 22px;
+                    border-radius: 999px;
+                  "
+                >
+                  Reschedule slot
+                </div>
+                <div style="font-size: 11px; color: #8e9aa6">
+                  Scheduled:
+                  <span style="color: #ffffff; font-weight: 700"
+                    >Fri, Jun 19 · 10:00 AM MST</span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 upcoming -->
+            <div
+              style="
+                background: #0f1822;
+                border: 1px solid rgba(255, 255, 255, 0.07);
+                padding: 20px 24px;
+                display: flex;
+                gap: 18px;
+                align-items: center;
+              "
+            >
+              <div
+                style="
+                  width: 30px;
+                  height: 30px;
+                  border-radius: 50%;
+                  background: rgba(255, 255, 255, 0.08);
+                  color: #66747f;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 13px;
+                  font-weight: 800;
+                  flex-shrink: 0;
+                "
+              >
+                4
+              </div>
+              <div
+                style="display: flex; flex-direction: column; gap: 2px; flex: 1"
+              >
+                <div
+                  style="
+                    font-size: 10px;
+                    font-weight: 800;
+                    color: #4a5662;
+                    letter-spacing: 0.12em;
+                  "
+                >
+                  STEP 4 · LOCKED
+                </div>
+                <div style="font-size: 15px; font-weight: 800; color: #66747f">
+                  Admissions interview &amp; final review
+                </div>
+                <div style="font-size: 11.5px; color: #4a5662">
+                  Scheduled after AQE results. Conducted by video when required.
+                </div>
+              </div>
+              <div
+                style="
+                  border: 1px solid rgba(255, 255, 255, 0.12);
+                  color: #4a5662;
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  padding: 8px 16px;
+                  border-radius: 999px;
+                "
+              >
+                LOCKED
+              </div>
+            </div>
+          </div>
+
+          <!-- Right rail -->
+          <div style="display: flex; flex-direction: column; gap: 16px">
+            <!-- AQE prep -->
+            <div
+              style="
+                background: #131d28;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 20px 22px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+              "
+            >
+              <div
+                style="
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  color: #e5c25e;
+                  letter-spacing: 0.14em;
+                "
+              >
+                PREPARE FOR THE AQE
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 10px">
+                <div style="display: flex; gap: 10px; align-items: baseline">
+                  <span style="color: #c9a13b; font-weight: 900">—</span
+                  ><span
+                    style="font-size: 12px; color: #c8d2dc; line-height: 1.5"
+                    >Review the AQE content blueprint (6 domains)</span
+                  >
+                </div>
+                <div style="display: flex; gap: 10px; align-items: baseline">
+                  <span style="color: #c9a13b; font-weight: 900">—</span
+                  ><span
+                    style="font-size: 12px; color: #c8d2dc; line-height: 1.5"
+                    >Take the 20-question practice set</span
+                  >
+                </div>
+                <div style="display: flex; gap: 10px; align-items: baseline">
+                  <span style="color: #c9a13b; font-weight: 900">—</span
+                  ><span
+                    style="font-size: 12px; color: #c8d2dc; line-height: 1.5"
+                    >Run the system &amp; proctoring check</span
+                  >
+                </div>
+              </div>
+              <div
+                style="
+                  background: #1f7a6f;
+                  color: #ffffff;
+                  font-size: 11px;
+                  font-weight: 800;
+                  text-align: center;
+                  padding: 10px 0;
+                  border-radius: 999px;
+                  letter-spacing: 0.04em;
+                "
+              >
+                OPEN PRACTICE SET
+              </div>
+            </div>
+
+            <!-- Program snapshot -->
+            <div
+              style="
+                background: #131d28;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                padding: 20px 22px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+              "
+            >
+              <div
+                style="
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  color: #e5c25e;
+                  letter-spacing: 0.14em;
+                "
+              >
+                YOU'RE APPLYING TO
+              </div>
+              <div
+                style="
+                  font-size: 15px;
+                  font-weight: 900;
+                  color: #ffffff;
+                  line-height: 1.2;
+                "
+              >
+                Executive Medical Doctorate (eMD)
+              </div>
+              <div style="display: flex; gap: 16px">
+                <div style="display: flex; flex-direction: column">
+                  <div
+                    style="font-size: 18px; font-weight: 900; color: #ffffff"
+                  >
+                    12
+                  </div>
+                  <div style="font-size: 9px; color: #66747f; font-weight: 700">
+                    QUARTERS
+                  </div>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <div
+                    style="font-size: 18px; font-weight: 900; color: #ffffff"
+                  >
+                    48
+                  </div>
+                  <div style="font-size: 9px; color: #66747f; font-weight: 700">
+                    COURSES
+                  </div>
+                </div>
+                <div style="display: flex; flex-direction: column">
+                  <div
+                    style="font-size: 18px; font-weight: 900; color: #ffd97a"
+                  >
+                    100%
+                  </div>
+                  <div style="font-size: 9px; color: #66747f; font-weight: 700">
+                    ONLINE
+                  </div>
+                </div>
+              </div>
+              <a
+                href="AZMSI Course Catalog.dc.html"
+                style="
+                  border: 1px solid rgba(255, 255, 255, 0.2);
+                  color: #c8d2dc;
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  text-align: center;
+                  padding: 9px 0;
+                  border-radius: 999px;
+                  letter-spacing: 0.06em;
+                  display: block;
+                "
+                >VIEW FULL CURRICULUM →</a
+              >
+            </div>
+
+            <!-- Help -->
+            <div
+              style="
+                background: linear-gradient(135deg, #14524a, #0e2b33);
+                border: 1px solid rgba(255, 255, 255, 0.12);
+                padding: 20px 22px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+              "
+            >
+              <div
+                style="
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  color: #5fcdbd;
+                  letter-spacing: 0.14em;
+                "
+              >
+                ADMISSIONS SUPPORT
+              </div>
+              <div
+                style="
+                  font-size: 12.5px;
+                  color: #ffffff;
+                  font-weight: 700;
+                  line-height: 1.5;
+                "
+              >
+                Questions about your application or the AQE?
+              </div>
+              <div style="font-size: 11.5px; color: #bfe6de">
+                admissions<span>@</span>azmsi.com
+              </div>
+              <div
+                style="
+                  border: 1px solid rgba(255, 255, 255, 0.3);
+                  color: #ffffff;
+                  font-size: 10.5px;
+                  font-weight: 800;
+                  text-align: center;
+                  padding: 9px 0;
+                  border-radius: 999px;
+                  margin-top: 4px;
+                "
+              >
+                BOOK AN ADVISOR CALL
+              </div>
+            </div>
+
+            <div
+              style="
+                font-size: 10px;
+                color: #4a5662;
+                line-height: 1.6;
+                border-left: 2px solid rgba(255, 255, 255, 0.14);
+                padding-left: 12px;
+              "
+            >
+              The eMD is a non-clinical degree and is not intended to lead to
+              physician licensure, clinical practice, residency placement, or
+              board certification.
+            </div>
+          </div>
+        </div>
+
+        <!-- Gold footer -->
+        <div
+          style="
+            background: #c9a13b;
+            padding: 20px 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 32px;
+          "
+        >
+          <div style="display: flex; flex-direction: column; gap: 1px">
+            <div style="font-weight: 900; font-size: 12.5px; color: #15212e">
+              AZMSI Admissions — apply.azmsi.com
+            </div>
+            <div style="font-size: 10px; color: #4a3f1e">
+              admissions<span>@</span>azmsi.com · rolling admissions
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              gap: 18px;
+              font-size: 11px;
+              font-weight: 700;
+              color: #15212e;
+            "
+          >
+            <a
+              href="AZMSI Website.dc.html"
+              style="color: #15212e; border-bottom: 1px solid #15212e"
+              >Home</a
+            >
+            <a
+              href="AZMSI Course Catalog.dc.html"
+              style="color: #15212e; border-bottom: 1px solid #15212e"
+              >Curriculum</a
+            >
+          </div>
+        </div>
+      </div>
+    </x-dc>
+  </body>
+</html>

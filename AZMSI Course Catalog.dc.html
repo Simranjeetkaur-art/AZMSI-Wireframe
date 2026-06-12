@@ -1,0 +1,778 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="./support.js"></script>
+  </head>
+  <body>
+    <x-dc>
+      <helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&amp;display=swap"
+          rel="stylesheet"
+        />
+        <style>
+          html,
+          body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+          }
+          * {
+            box-sizing: border-box;
+          }
+          a {
+            text-decoration: none;
+          }
+        </style>
+      </helmet>
+
+      <div
+        data-screen-label="Curriculum"
+        style="
+          font-family: &quot;Archivo&quot;, sans-serif;
+          color: #1e2d3a;
+          background: #ffffff;
+          min-height: 100vh;
+        "
+      >
+        <!-- Utility bar -->
+        <div
+          style="
+            background: #0e2336;
+            color: #9fb0be;
+            font-size: 12.5px;
+            letter-spacing: 0.04em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 48px;
+            gap: 24px;
+          "
+        >
+          <div style="display: flex; gap: 8px; align-items: center">
+            <span style="color: #be9b46; font-weight: 600">AZMSI</span>
+            <span>· Arizona Medical Sciences Institute</span>
+          </div>
+          <div style="display: flex; gap: 24px; align-items: center">
+            <span>info<span>@</span>azmsi.com</span>
+            <a
+              href="AZMSI LMS Dashboard.dc.html"
+              style="color: #d9be7e; font-weight: 600"
+              >Student Portal →</a
+            >
+          </div>
+        </div>
+
+        <!-- Nav -->
+        <div
+          style="
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            background: #ffffff;
+            border-bottom: 1px solid #e6e3d9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 48px;
+            gap: 32px;
+          "
+        >
+          <a
+            href="AZMSI Website.dc.html"
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 2px;
+              flex-shrink: 0;
+            "
+          >
+            <div
+              style="
+                font-family: &quot;Source Serif 4&quot;, serif;
+                font-weight: 700;
+                font-size: 21px;
+                letter-spacing: 0.06em;
+                color: #143552;
+                white-space: nowrap;
+              "
+            >
+              ARIZONA MEDICAL SCIENCES
+            </div>
+            <div
+              style="
+                font-size: 10.5px;
+                letter-spacing: 0.42em;
+                color: #be9b46;
+                font-weight: 600;
+                white-space: nowrap;
+              "
+            >
+              I N S T I T U T E
+            </div>
+          </a>
+          <div
+            style="
+              display: flex;
+              gap: 28px;
+              align-items: center;
+              font-size: 14px;
+              font-weight: 500;
+              color: #3a4b5a;
+            "
+          >
+            <a href="AZMSI Website.dc.html" style="color: #3a4b5a">About</a>
+            <a href="AZMSI Website.dc.html" style="color: #3a4b5a"
+              >eMD Program</a
+            >
+            <span
+              style="
+                color: #143552;
+                font-weight: 700;
+                border-bottom: 2px solid #be9b46;
+                padding-bottom: 3px;
+              "
+              >Curriculum</span
+            >
+            <a href="AZMSI Website.dc.html" style="color: #3a4b5a"
+              >Fellowships</a
+            >
+            <a href="AZMSI Website.dc.html" style="color: #3a4b5a">Research</a>
+            <a href="AZMSI Admissions.dc.html" style="color: #3a4b5a"
+              >Admissions</a
+            >
+          </div>
+          <div style="display: flex; gap: 12px; align-items: center">
+            <a
+              href="AZMSI LMS Dashboard.dc.html"
+              style="
+                border: 1px solid #c9cfd5;
+                color: #143552;
+                font-size: 13.5px;
+                font-weight: 600;
+                padding: 10px 18px;
+                border-radius: 3px;
+              "
+              >Student Portal</a
+            >
+            <a
+              href="AZMSI Admissions.dc.html"
+              style="
+                background: #be9b46;
+                color: #14253a;
+                font-size: 13.5px;
+                font-weight: 700;
+                padding: 11px 20px;
+                border-radius: 3px;
+              "
+              >Apply Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Hero -->
+        <div
+          style="
+            background: #0e2336;
+            background-image: radial-gradient(
+              ellipse 900px 500px at 80% 0%,
+              rgba(190, 155, 70, 0.13),
+              transparent 60%
+            );
+            padding: 80px 48px 72px;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              max-width: 1180px;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 36px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+                gap: 48px;
+              "
+            >
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 22px;
+                  max-width: 680px;
+                "
+              >
+                <div style="display: flex; align-items: center; gap: 14px">
+                  <div
+                    style="height: 1px; width: 40px; background: #be9b46"
+                  ></div>
+                  <div
+                    style="
+                      color: #d9be7e;
+                      font-size: 12.5px;
+                      letter-spacing: 0.24em;
+                      font-weight: 600;
+                    "
+                  >
+                    EXECUTIVE MEDICAL DOCTORATE (eMD) · FULL PROGRAM
+                  </div>
+                </div>
+                <h1
+                  style="
+                    font-family: &quot;Source Serif 4&quot;, serif;
+                    font-weight: 600;
+                    font-size: 52px;
+                    line-height: 1.05;
+                    color: #ffffff;
+                    margin: 0;
+                    text-wrap: balance;
+                  "
+                >
+                  The Complete Curriculum
+                </h1>
+                <p
+                  style="
+                    color: #aebdca;
+                    font-size: 17px;
+                    line-height: 1.65;
+                    margin: 0;
+                    max-width: 580px;
+                    text-wrap: pretty;
+                  "
+                >
+                  One degree across twelve quarters — from medical foundations
+                  to AI medicine, biotechnology, executive leadership, and an
+                  original research dissertation.
+                </p>
+              </div>
+              <div
+                style="
+                  display: flex;
+                  gap: 0;
+                  border: 1px solid rgba(255, 255, 255, 0.16);
+                  flex-shrink: 0;
+                "
+              >
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                    padding: 18px 26px;
+                    border-right: 1px solid rgba(255, 255, 255, 0.16);
+                  "
+                >
+                  <div
+                    style="
+                      font-family: &quot;Source Serif 4&quot;, serif;
+                      font-weight: 700;
+                      font-size: 30px;
+                      color: #ffffff;
+                    "
+                  >
+                    12
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #8fa2b2;
+                      font-weight: 600;
+                      letter-spacing: 0.12em;
+                    "
+                  >
+                    QUARTERS
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                    padding: 18px 26px;
+                    border-right: 1px solid rgba(255, 255, 255, 0.16);
+                  "
+                >
+                  <div
+                    style="
+                      font-family: &quot;Source Serif 4&quot;, serif;
+                      font-weight: 700;
+                      font-size: 30px;
+                      color: #ffffff;
+                    "
+                  >
+                    48
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #8fa2b2;
+                      font-weight: 600;
+                      letter-spacing: 0.12em;
+                    "
+                  >
+                    COURSES
+                  </div>
+                </div>
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                    padding: 18px 26px;
+                  "
+                >
+                  <div
+                    style="
+                      font-family: &quot;Source Serif 4&quot;, serif;
+                      font-weight: 700;
+                      font-size: 30px;
+                      color: #d9be7e;
+                    "
+                  >
+                    192
+                  </div>
+                  <div
+                    style="
+                      font-size: 10px;
+                      color: #8fa2b2;
+                      font-weight: 600;
+                      letter-spacing: 0.12em;
+                    "
+                  >
+                    CREDITS
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phases -->
+        <div
+          style="
+            padding: 72px 48px 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+            max-width: 1280px;
+            width: 100%;
+            margin: 0 auto;
+          "
+        >
+          <sc-for list="{{ phases }}" as="phase" hint-placeholder-count="3">
+            <div style="display: flex; flex-direction: column; gap: 28px">
+              <div
+                style="
+                  display: flex;
+                  align-items: flex-end;
+                  gap: 18px;
+                  border-bottom: 1px solid #e3ded1;
+                  padding-bottom: 18px;
+                "
+              >
+                <div style="display: flex; flex-direction: column; gap: 8px">
+                  <div
+                    style="
+                      font-weight: 700;
+                      font-size: 12.5px;
+                      color: #be9b46;
+                      letter-spacing: 0.2em;
+                    "
+                  >
+                    {{ phase.tag }}
+                  </div>
+                  <div
+                    style="
+                      font-family: &quot;Source Serif 4&quot;, serif;
+                      font-weight: 600;
+                      font-size: 30px;
+                      color: #143552;
+                    "
+                  >
+                    {{ phase.title }}
+                  </div>
+                </div>
+                <div
+                  style="
+                    font-size: 13.5px;
+                    color: #8a97a3;
+                    margin-left: auto;
+                    font-weight: 500;
+                  "
+                >
+                  {{ phase.sub }}
+                </div>
+              </div>
+
+              <div
+                style="
+                  display: grid;
+                  grid-template-columns: repeat(4, 1fr);
+                  gap: 16px;
+                "
+              >
+                <sc-for
+                  list="{{ phase.quarters }}"
+                  as="q"
+                  hint-placeholder-count="4"
+                >
+                  <div
+                    style="background: {{ q.cardBg }}; border: 1px solid {{ q.cardBorder }}; border-top: 3px solid {{ q.topColor }}; border-radius: 4px; display: flex; flex-direction: column;"
+                  >
+                    <div
+                      style="padding: 14px 18px; border-bottom: 1px solid {{ q.divider }}; display: flex; justify-content: space-between; align-items: center;"
+                    >
+                      <div
+                        style="font-family: 'Source Serif 4', serif; font-weight: 700; font-size: 15px; color: {{ q.qColor }};"
+                      >
+                        {{ q.label }}
+                      </div>
+                      <div
+                        style="font-size: 9px; font-weight: 700; color: {{ q.badgeColor }}; background: {{ q.badgeBg }}; padding: 4px 9px; border-radius: 999px; letter-spacing: 0.06em;"
+                      >
+                        {{ q.badge }}
+                      </div>
+                    </div>
+                    <div
+                      style="
+                        padding: 8px 18px 14px;
+                        display: flex;
+                        flex-direction: column;
+                      "
+                    >
+                      <sc-for
+                        list="{{ q.courses }}"
+                        as="c"
+                        hint-placeholder-count="4"
+                      >
+                        <div
+                          style="display: flex; gap: 12px; padding: 11px 0; border-bottom: 1px solid {{ q.rowDivider }}; align-items: baseline;"
+                        >
+                          <div
+                            style="font-size: 10px; font-weight: 700; color: {{ q.codeColor }}; min-width: 58px; letter-spacing: 0.02em;"
+                          >
+                            {{ c.code }}
+                          </div>
+                          <div
+                            style="font-size: 12.5px; color: {{ q.nameColor }}; line-height: 1.4; font-weight: 500;"
+                          >
+                            {{ c.name }}
+                          </div>
+                        </div>
+                      </sc-for>
+                    </div>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+
+          <!-- Dissertation band -->
+          <div
+            style="
+              background: #f6f2e9;
+              border: 1px solid #e3ded1;
+              border-radius: 6px;
+              padding: 40px 44px;
+              display: grid;
+              grid-template-columns: 1fr auto;
+              gap: 40px;
+              align-items: center;
+            "
+          >
+            <div style="display: flex; flex-direction: column; gap: 12px">
+              <div
+                style="
+                  font-weight: 700;
+                  font-size: 12.5px;
+                  color: #be9b46;
+                  letter-spacing: 0.2em;
+                "
+              >
+                DISSERTATION &amp; FELLOWSHIP
+              </div>
+              <div
+                style="
+                  font-family: &quot;Source Serif 4&quot;, serif;
+                  font-weight: 600;
+                  font-size: 26px;
+                  color: #143552;
+                  line-height: 1.25;
+                  max-width: 640px;
+                "
+              >
+                The final quarters culminate in an original research
+                dissertation — and graduates may continue into executive
+                fellowship tracks.
+              </div>
+            </div>
+            <a
+              href="AZMSI Admissions.dc.html"
+              style="
+                background: #be9b46;
+                color: #14253a;
+                font-size: 14px;
+                font-weight: 700;
+                padding: 15px 30px;
+                border-radius: 3px;
+                white-space: nowrap;
+              "
+              >Start your application →</a
+            >
+          </div>
+          <div
+            style="
+              font-size: 12px;
+              color: #8a97a3;
+              line-height: 1.6;
+              border-left: 2px solid #d9be7e;
+              padding-left: 14px;
+            "
+          >
+            Quarter 1 reflects the active launch curriculum. Quarters 2–12
+            represent the planned full program structure and are subject to
+            academic refinement. The eMD is a non-clinical degree and is not
+            intended to lead to physician licensure or clinical practice.
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <div
+          style="
+            background: #0e2336;
+            padding: 56px 48px 36px;
+            display: flex;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              max-width: 1280px;
+              width: 100%;
+              display: flex;
+              flex-direction: column;
+              gap: 32px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 32px;
+                flex-wrap: wrap;
+              "
+            >
+              <div style="display: flex; flex-direction: column; gap: 8px">
+                <div
+                  style="
+                    font-family: &quot;Source Serif 4&quot;, serif;
+                    font-weight: 700;
+                    font-size: 18px;
+                    letter-spacing: 0.06em;
+                    color: #ffffff;
+                  "
+                >
+                  ARIZONA MEDICAL SCIENCES
+                </div>
+                <div
+                  style="
+                    font-size: 10px;
+                    letter-spacing: 0.42em;
+                    color: #be9b46;
+                    font-weight: 600;
+                  "
+                >
+                  I N S T I T U T E
+                </div>
+              </div>
+              <div style="display: flex; gap: 40px">
+                <div style="display: flex; flex-direction: column; gap: 10px">
+                  <div
+                    style="
+                      color: #d9be7e;
+                      font-size: 11.5px;
+                      letter-spacing: 0.18em;
+                      font-weight: 700;
+                    "
+                  >
+                    ACADEMICS
+                  </div>
+                  <a
+                    href="AZMSI Website.dc.html"
+                    style="color: #aebdca; font-size: 13.5px"
+                    >eMD Program</a
+                  >
+                  <span style="color: #aebdca; font-size: 13.5px"
+                    >Curriculum</span
+                  >
+                  <a
+                    href="AZMSI LMS Dashboard.dc.html"
+                    style="color: #aebdca; font-size: 13.5px"
+                    >Student Portal</a
+                  >
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 10px">
+                  <div
+                    style="
+                      color: #d9be7e;
+                      font-size: 11.5px;
+                      letter-spacing: 0.18em;
+                      font-weight: 700;
+                    "
+                  >
+                    ADMISSIONS
+                  </div>
+                  <a
+                    href="AZMSI Admissions.dc.html"
+                    style="color: #aebdca; font-size: 13.5px"
+                    >Apply Now</a
+                  >
+                  <span style="color: #aebdca; font-size: 13.5px"
+                    >admissions<span>@</span>azmsi.com</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                border-top: 1px solid rgba(255, 255, 255, 0.12);
+                padding-top: 24px;
+                display: flex;
+                justify-content: space-between;
+                gap: 32px;
+                align-items: baseline;
+              "
+            >
+              <div style="color: #5f7488; font-size: 12px">
+                © 2026 Arizona Medical Sciences Institute. All rights reserved.
+              </div>
+              <div
+                style="
+                  color: #5f7488;
+                  font-size: 11.5px;
+                  max-width: 560px;
+                  line-height: 1.6;
+                  text-align: right;
+                "
+              >
+                The eMD program is non-clinical and is not intended to lead to
+                physician licensure, clinical practice, or board certification.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </x-dc>
+    <script type="text/x-dc" data-dc-script>
+      class Component extends DCLogic {
+        renderVals() {
+          const active = {
+            cardBg: '#FFFFFF', cardBorder: '#1C5F58', topColor: '#1C5F58', divider: '#E3DED1',
+            qColor: '#143552', badge: 'IN PROGRESS', badgeColor: '#FFFFFF', badgeBg: '#1C5F58',
+            rowDivider: '#EFECE3', codeColor: '#BE9B46', nameColor: '#1E2D3A'
+          };
+          const std = {
+            cardBg: '#FFFFFF', cardBorder: '#E3DED1', topColor: '#E3DED1', divider: '#EFECE3',
+            qColor: '#143552', badge: 'PLANNED', badgeColor: '#8A97A3', badgeBg: '#F2F0E9',
+            rowDivider: '#F2F0E9', codeColor: '#BE9B46', nameColor: '#45576A'
+          };
+          return {
+            phases: [
+              {
+                tag: 'YEAR ONE', title: 'Medical Science Foundations', sub: 'Quarters 1–4',
+                quarters: [
+                  { label: 'Quarter 1', ...active, courses: [
+                    { code: 'EMD-101', name: 'Medical Terminology & Clinical Language' },
+                    { code: 'EMD-102', name: 'Human Anatomy I' },
+                    { code: 'EMD-103', name: 'Cellular Biology & Genetics' },
+                    { code: 'EMD-104', name: 'Healthcare Systems & Global Medicine' } ] },
+                  { label: 'Quarter 2', ...std, courses: [
+                    { code: 'EMD-201', name: 'Human Anatomy II' },
+                    { code: 'EMD-202', name: 'Human Physiology' },
+                    { code: 'EMD-203', name: 'Biochemistry & Molecular Medicine' },
+                    { code: 'EMD-204', name: 'Health Informatics Foundations' } ] },
+                  { label: 'Quarter 3', ...std, courses: [
+                    { code: 'EMD-301', name: 'Pathophysiology' },
+                    { code: 'EMD-302', name: 'Pharmacology Principles' },
+                    { code: 'EMD-303', name: 'Microbiology & Immunology' },
+                    { code: 'EMD-304', name: 'Biostatistics & Epidemiology' } ] },
+                  { label: 'Quarter 4', ...std, courses: [
+                    { code: 'EMD-401', name: 'Medical Imaging & Diagnostics' },
+                    { code: 'EMD-402', name: 'Clinical Data Science' },
+                    { code: 'EMD-403', name: 'Healthcare Economics & Finance' },
+                    { code: 'EMD-404', name: 'Research Methods I' } ] }
+                ]
+              },
+              {
+                tag: 'YEAR TWO', title: 'Innovation, AI & Biotechnology', sub: 'Quarters 5–8',
+                quarters: [
+                  { label: 'Quarter 5', ...std, courses: [
+                    { code: 'EMD-501', name: 'Artificial Intelligence in Medicine' },
+                    { code: 'EMD-502', name: 'Machine Learning for Healthcare' },
+                    { code: 'EMD-503', name: 'Predictive & Precision Medicine' },
+                    { code: 'EMD-504', name: 'Digital Health Systems' } ] },
+                  { label: 'Quarter 6', ...std, courses: [
+                    { code: 'EMD-601', name: 'Genomics & Biotechnology' },
+                    { code: 'EMD-602', name: 'Regenerative & Longevity Sciences' },
+                    { code: 'EMD-603', name: 'Medical Robotics & Automation' },
+                    { code: 'EMD-604', name: 'Digital Therapeutics' } ] },
+                  { label: 'Quarter 7', ...std, courses: [
+                    { code: 'EMD-701', name: 'Hospital Operations & Quality' },
+                    { code: 'EMD-702', name: 'Healthcare Policy & Regulation' },
+                    { code: 'EMD-703', name: 'Health Systems Leadership' },
+                    { code: 'EMD-704', name: 'Research Methods II' } ] },
+                  { label: 'Quarter 8', ...std, courses: [
+                    { code: 'EMD-801', name: 'Healthcare Entrepreneurship' },
+                    { code: 'EMD-802', name: 'Innovation Ecosystems' },
+                    { code: 'EMD-803', name: 'Medical Product & EMR Systems' },
+                    { code: 'EMD-804', name: 'Translational Medicine' } ] }
+                ]
+              },
+              {
+                tag: 'YEAR THREE', title: 'Leadership, Research & Dissertation', sub: 'Quarters 9–12',
+                quarters: [
+                  { label: 'Quarter 9', ...std, courses: [
+                    { code: 'EMD-901', name: 'Executive Strategy in Healthcare' },
+                    { code: 'EMD-902', name: 'Global & Public Health Systems' },
+                    { code: 'EMD-903', name: 'Bioethics & Medical Law' },
+                    { code: 'EMD-904', name: 'Healthcare Analytics & Outcomes' } ] },
+                  { label: 'Quarter 10', ...std, courses: [
+                    { code: 'EMD-1001', name: 'AI Diagnostics Practicum' },
+                    { code: 'EMD-1002', name: 'Cybersecurity & Data Governance' },
+                    { code: 'EMD-1003', name: 'Organizational Leadership' },
+                    { code: 'EMD-1004', name: 'Dissertation Proposal' } ] },
+                  { label: 'Quarter 11', ...std, courses: [
+                    { code: 'EMD-1101', name: 'Advanced Research Seminar' },
+                    { code: 'EMD-1102', name: 'Scientific Publication & Communication' },
+                    { code: 'EMD-1103', name: 'Innovation Capstone I' },
+                    { code: 'EMD-1104', name: 'Dissertation Research I' } ] },
+                  { label: 'Quarter 12', ...std, courses: [
+                    { code: 'EMD-1201', name: 'Innovation Capstone II' },
+                    { code: 'EMD-1202', name: 'Executive Leadership Capstone' },
+                    { code: 'EMD-1203', name: 'Dissertation Research II' },
+                    { code: 'EMD-1204', name: 'Dissertation Defense' } ] }
+                ]
+              }
+            ]
+          };
+        }
+      }
+    </script>
+  </body>
+</html>
