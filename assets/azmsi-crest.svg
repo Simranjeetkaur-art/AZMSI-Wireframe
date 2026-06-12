@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <defs>
+    <path id="arcTop" d="M 120 120 m -86 0 a 86 86 0 1 1 172 0" />
+    <path id="arcBottom" d="M 120 120 m -86 0 a 86 86 0 1 0 172 0" />
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="120" cy="120" r="116" fill="#ffffff" stroke="#0e2336" stroke-width="5" />
+  <circle cx="120" cy="120" r="104" fill="none" stroke="#be9b46" stroke-width="1.5" />
+  <circle cx="120" cy="120" r="70" fill="none" stroke="#be9b46" stroke-width="1.5" />
+
+  <!-- Ring text -->
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="12.5" font-weight="600" fill="#0e2336" letter-spacing="1.5">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">ARIZONA MEDICAL SCIENCES</textPath>
+  </text>
+  <text font-family="Georgia, 'Times New Roman', serif" font-size="14.5" font-weight="600" fill="#0e2336" letter-spacing="5">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">INSTITUTE</textPath>
+  </text>
+
+  <!-- Side stars -->
+  <text x="22" y="126" font-size="11" fill="#be9b46" text-anchor="middle">&#10022;</text>
+  <text x="218" y="126" font-size="11" fill="#be9b46" text-anchor="middle">&#10022;</text>
+
+  <!-- Rod of Asclepius -->
+  <g stroke="#1c5f58" stroke-width="3" fill="none" stroke-linecap="round">
+    <line x1="120" y1="62" x2="120" y2="106" />
+    <path d="M 110 70 C 130 74, 130 84, 110 88 C 92 92, 110 100, 126 98" />
+  </g>
+  <circle cx="120" cy="60" r="3.5" fill="#1c5f58" />
+
+  <!-- Monogram -->
+  <text x="120" y="152" font-family="Georgia, 'Times New Roman', serif" font-size="36" font-weight="700" fill="#0e2336" text-anchor="middle" letter-spacing="3">AZMSI</text>
+  <text x="120" y="172" font-family="Georgia, 'Times New Roman', serif" font-size="10" font-weight="600" fill="#be9b46" text-anchor="middle" letter-spacing="3">eMD PROGRAM</text>
+</svg>
